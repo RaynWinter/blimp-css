@@ -82,6 +82,11 @@ html {
   padding-left: 16px;
   color: black;
 }
+.input-icons {
+  position: absolute;
+  margin: -30px;
+  margin-left: 250px;
+}
 .form-group>label {
     bottom: 34px;
     left: 15px;
@@ -112,9 +117,10 @@ html {
 
 
 .login-btn {
-    margin-top: 16px;
+    /* margin-top: 16px; */
+    /* move remember me to the right from button, and forgot bellow the button*/
     margin-bottom: 4px;
-    width: 100%;
+
     padding: 6px 16px 6px 16px;
     background-color: #3772FF;
     border: 1px solid #3772FF;
@@ -139,18 +145,15 @@ html {
 }
 
 .login-links {
+  padding-top: 6px;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 17px;
     letter-spacing: 1.25px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.login-link-left {
-
+    justify-content: center;
+    flex-direction: row;
 }
 
 .login-links a {
@@ -167,11 +170,9 @@ html {
 
 
 .checbkox-wrapper {
-    /* display: flex;
+    display: flex;
     justify-content: space-between;
     flex-direction: row;
-
-    justify-content: center; */
 }
 
 /* reset for defualt checkbox very important, could be wrong !pay attention */
