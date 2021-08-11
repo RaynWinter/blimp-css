@@ -31,7 +31,10 @@
         </div>
         <div class="container">
             <div class="login-form">
+                <div class="title-wrapper">
                 <div class="login-form-title">Log In</div>
+                <div class="login-form-right"><a href="#">Create account</a></div>
+                </div>
                 <form>
                     <div class="login-wrapper">
                         <div class="form-group">
@@ -39,18 +42,26 @@
                             <label for="name">Login:</label>
                         </div>
                         <div class="form-group">
-                            <input class="form-control" type="text" id="password" required minlength="1" maxlength="20" size="10">
+                            <input class="form-control" type="password"  id="myInput" required minlength="1" maxlength="20" size="10">
                             <label for="password">Password:</label>
                         </div>
                         <div class="checbkox-wrapper">
+                                <div class="checkbox">
+                                    <input class="custom-checkbox"  type="checkbox" onclick="myFunction()" id="check-1" >
+                                    <label for="check-1">Show Password</label>
+                                </div>
+                               
+                        </div>
+                        <Button class="login-btn">Default</Button>
+                        <div class="checbkox-wrapper">
+                            
+                            
+                    </div>
+                        <div class="login-links">
                             <div class="checkbox">
                                 <input class="custom-checkbox" type="checkbox" id="check-2" >
                                 <label for="check-2">Remember me</label>
                             </div>
-                        </div>
-                        <Button class="login-btn">Default</Button>
-                        <div class="login-links">
-                            <div class="login-link-left"><a href="#">Create account</a></div>
                             <div class="login-link-left"><a href="#">Forgot password?</a></div>
                         </div>
                     </div>  
@@ -58,4 +69,14 @@
             </div>
         </div>
     </body>
+    <script>
+        function myFunction() {
+      var x = document.getElementById("myInput");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+    }
+    </script>
 </html>

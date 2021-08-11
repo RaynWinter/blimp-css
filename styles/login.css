@@ -17,25 +17,45 @@ html {
 
 /* FORM STARTING HERE */ 
 .login-form {
-
   justify-content: center;
   background: #FFFFFF;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 .login-wrapper {
     margin: 20px;
     min-width: 280px;
 }
-.login-form-title {
+.title-wrapper {
     margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.login-form-title {
+
     margin-left: 20px;
-    margin-bottom: 20px;
     font-style: normal;
     font-weight: normal;
     font-size: 34px;
     line-height: 41px;
     letter-spacing: 0.25px;
-    color: #3772FF;
+    
+}
+.login-form-right{
+  padding-right: 20px;
+  font-size: 14px;
+}
+.login-form-right a {
+  color: #3772FF;
+  text-decoration: none;
+  
+}
+.login-form-right a:visited {
+  color: #3772FF;
+}
+.login-form-right a:hover {
+  color: #93B2FF;
 }
 .login-form input {
     width: 100%;
@@ -53,6 +73,14 @@ html {
   border-radius: 10px;
   outline: 0;
   outline-offset: 0;
+}
+.login-form input[type=text] {
+  padding-left: 16px;
+  color: black;
+}
+.login-form input[type=password] {
+  padding-left: 16px;
+  color: black;
 }
 .form-group>label {
     bottom: 34px;
@@ -84,8 +112,8 @@ html {
 
 
 .login-btn {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 16px;
+    margin-bottom: 4px;
     width: 100%;
     padding: 6px 16px 6px 16px;
     background-color: #3772FF;
@@ -118,21 +146,33 @@ html {
     letter-spacing: 1.25px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.login-link-left {
+
 }
 
 .login-links a {
-  color: #3772FF;
+  color: #000000;
   text-decoration: none;
+  
 }
 .login-links a:visited {
-  color: #3772FF;
+  color: #000000;
 }
 .login-links a:hover {
   color: #93B2FF;
 }
 
 
+.checbkox-wrapper {
+    /* display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 
+    justify-content: center; */
+}
 
 /* reset for defualt checkbox very important, could be wrong !pay attention */
 .custom-checkbox {
@@ -146,7 +186,7 @@ html {
     user-select: none;
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 17px;
     letter-spacing: 1.25px;
 }
