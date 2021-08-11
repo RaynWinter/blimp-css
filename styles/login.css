@@ -9,12 +9,13 @@ html {
 .container  {
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
 
 /* FORM STARTING HERE */ 
 .login-form {
-    margin-top: 200px;
+
     background: #FFFFFF;
     border-radius: 20px;
 }
@@ -202,7 +203,6 @@ html {
 @media (min-width: 48em) {
   
 .container  {
-
   display: flex;
   justify-content: center;
   align-items: center;
