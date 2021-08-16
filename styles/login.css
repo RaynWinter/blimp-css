@@ -4,8 +4,6 @@ html {
 * {
     font-family: 'Montserrat';
 }
-
-
 .container  {
     height: 100vh;
     display: flex;
@@ -14,15 +12,16 @@ html {
     justify-content: center;
     overflow: hidden;
 }
-
 /* FORM STARTING HERE */ 
 .login-form {
   justify-content: center;
   background: #FFFFFF;
   border-radius: 10px;
+  /* maybe ugly, idk */
+  box-shadow: 10px 10px #000000;
 }
 .login-wrapper {
-    margin: 20px;
+    margin: 20px 20px 14px 20px;
     min-width: 280px;
 }
 .title-wrapper {
@@ -33,7 +32,6 @@ html {
     justify-content: space-between;
 }
 .login-form-title {
-
     margin-left: 20px;
     font-style: normal;
     font-weight: normal;
@@ -43,8 +41,13 @@ html {
     
 }
 .login-form-right{
-  padding-right: 20px;
-  font-size: 14px;
+
+    padding: 6px 20px 6px 16px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1.25px;
 }
 .login-form-right a {
   color: #3772FF;
@@ -102,25 +105,17 @@ html {
     line-height: 15px;
     letter-spacing: 0.4px;
   }
-  
   .form-control:focus~label {
     bottom: 55px;
     color: #3772FF;
   }
-  
   /*nothing to test on, but kinda work*/
   .form-control:valid~label {
     bottom: 55px;
     color: #45B26B;
   }
-  
-
-
 .login-btn {
-    /* margin-top: 16px; */
-    /* move remember me to the right from button, and forgot bellow the button*/
     margin-bottom: 4px;
-
     padding: 6px 16px 6px 16px;
     background-color: #3772FF;
     border: 1px solid #3772FF;
@@ -145,12 +140,13 @@ html {
 }
 
 .login-links {
-  padding-top: 6px;
+    padding: 6px 16px 6px 16px;
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 17px;
     letter-spacing: 1.25px;
+
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -243,7 +239,6 @@ html {
     background-color: #B4BDD3;
 }
 
- 
 @media (min-width: 48em) {
   
 .container  {
@@ -253,4 +248,3 @@ html {
   justify-content: center;
 }
 }
-
