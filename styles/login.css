@@ -60,6 +60,47 @@ html {
 .login-form-right a:hover {
   color: #93B2FF;
 }
+
+
+.login-form select {
+  /* Reset Select */
+  appearance: none;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  /* Personalize */
+    width: 100%;
+    height: 46px;
+    border: 1px solid #93B2FF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.login-form
+  select {
+    /* Reset */
+    appearance: none;
+    border: 0;
+    outline: 0;
+    font: inherit;
+    /* Personalize */
+    
+    height: 3em;
+    padding: 0 0 0 16px;
+
+    
+    font-size: 12px;
+
+    height: 46px;
+    border: 1px solid #93B2FF;
+    box-sizing: border-box;
+    border-radius: 10px;
+   
+    cursor: pointer;
+  }
+
 .login-form input {
     width: 100%;
     height: 46px;
@@ -85,11 +126,11 @@ html {
   padding-left: 16px;
   color: black;
 }
-.input-icons {
+/* .input-icons {
   position: absolute;
   margin: -35px;
   margin-left: 240px;
-}
+} */
 .form-group>label {
     bottom: 34px;
     left: 15px;
