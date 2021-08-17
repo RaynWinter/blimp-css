@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>BLIMP</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <link rel="stylesheet" href="../../components/navigation/nav.css">
+        <link rel="stylesheet" href="../../components/login/login.css">
+        <link rel="stylesheet" href="../../components/navigation/stars.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    </head>
+    <body>
+        <header class="header">
+          <a href="" class="logo">Blimp</a>
+            <!-- <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+          <ul class="menu">
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+          </ul> -->
+        </header>
+        <div>
+            <div class="littlestars"></div>
+            <!-- <div class="littlebitmorestars></div> -->
+            <!-- <div class="littlebitmoreofstars"></div> -->
+            <div class="evenmorestars"></div>
+        </div>
+        <div class="container">
+            <div class="login-form">
+                <div class="title-wrapper">
+                <div class="login-form-title">Log In</div>
+                <div class="login-form-right"><a href="sign.html">Create account</a></div>
+                </div>
+                <form>
+                    <div class="login-wrapper">
+                        <div class="form-group">
+                            <input class="form-control" type="text" id="name" required minlength="1" maxlength="12" size="10">
+                            <label for="name">Login:</label>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-control" type="password"  id="myInput" required minlength="1" maxlength="20" size="10">
+                            <!-- <div class="input-icons" onclick="myFunction()" type="click">
+                                <img src="assets/password.png" height="24" alt="Search" />
+                            </div> -->
+                            <label  onclick="myFunction()" type="click" for="password">Password:</label>
+                            <!-- <div class="checkbox">
+                                <input class="custom-checkbox"  type="checkbox" onclick="myFunction()" id="check-1" >
+                                <label for="check-1">Show Password</label>
+                            </div> -->
+                        </div>    
+                        <div class="checbkox-wrapper">
+                            <Button class="login-btn">Enter</Button>
+                            <div class="checkbox">
+                                <input class="custom-checkbox" type="checkbox" id="check-2" >
+                                <label for="check-2">Remember me</label>
+                            </div>
+                        </div>
+                        <div class="login-links">
+                            <div class="login-link-left"><a href="#">Forgot password?</a></div>
+                        </div>
+                    </div>  
+                </form>
+            </div>
+        </div>
+    </body>
+    <script>
+        function myFunction() {
+      var x = document.getElementById("myInput");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+    }
+    </script>
+</html>
